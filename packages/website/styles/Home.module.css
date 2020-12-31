@@ -36,7 +36,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #ba00f3;
   text-decoration: none;
 }
 
@@ -95,8 +95,8 @@
 a.card:hover,
 a.card:focus,
 a.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #ba00f3;
+  border-color: #ba00f3;
 }
 
 .republican {
