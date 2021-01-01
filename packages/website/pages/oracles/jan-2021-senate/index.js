@@ -26,6 +26,7 @@ export default function Index({ winners }) {
 }
 
 export function Senate({ network, winners }) {
+  const isMainnet = network === "mainnet";
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -67,22 +68,9 @@ export function Senate({ network, winners }) {
             </p>
           </a>
         )}
-        {network === "kovan" && (
-          <Link href="./">
-            <a style={{ textDecoration: "underline" }}>
-              <p className={styles.description}>
-                Prefer to view
-                <code className={styles.code}>mainnet</code> instead?
-              </p>
-            </a>
-          </Link>
-        )}
 
         <div className={styles.grid}>
-          <div
-            // href="https://nextjs.org/docs"
-            className={`${styles.card} ${styles[affiliations[winners[0]]]}`}
-          >
+          <div className={`${styles.card} ${styles[affiliations[winners[0]]]}`}>
             <h3>{positions[0]}</h3>
             <p>{winners[0] || "Not yet called"}</p>
           </div>
@@ -92,6 +80,15 @@ export function Senate({ network, winners }) {
             <p>{winners[1] || "Not yet called"}</p>
           </div>
 
+          <Link href={isMainnet ? "./jan-2021-senate/kovan" : "./"}>
+            <a className={styles.card}>
+              <h3>View {isMainnet ? "Kovan Testnet" : "Mainnet"} &rarr;</h3>
+              <p>
+                View what this dashboard might look like after race calls
+                arrive.
+              </p>
+            </a>
+          </Link>
           <a
             href="https://docs.everipedia.org/current-oraqles-projects/jan-5-2021"
             className={styles.card}
