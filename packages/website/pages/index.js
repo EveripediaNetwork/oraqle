@@ -13,6 +13,18 @@ export default function Home() {
         </p> */}
 
         <div className={styles.grid}>
+
+          <Link href="/oracles/superbowl-lv">
+            <a href="https://nextjs.org/docs" className={styles.card}>
+              <h3>February 6th, 2021 Super Bowl LV &rarr;</h3>
+              <p>
+                Associated Press and Everipedia partner again to bring the
+                Super Bowl LV Results on-chain!
+              </p>
+              {/* <p>Find in-depth information about Next.js features and API.</p> */}
+            </a>
+          </Link>
+
           <Link href="/oracles/jan-2021-senate">
             <a href="https://nextjs.org/docs" className={styles.card}>
               <h3>January 5th, 2021 Senate Runoff &rarr;</h3>
