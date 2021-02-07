@@ -16,7 +16,7 @@ export default function Home() {
 
           <Link href="/oracles/superbowl-lv">
             <a href="https://nextjs.org/docs" className={styles.card}>
-              <h3>February 6th, 2021 Super Bowl LV &rarr;</h3>
+              <h3>February 7th, 2021 Super Bowl LV &rarr;</h3>
               <p>
                 Associated Press and Everipedia partner again to bring the
                 Super Bowl LV Results on-chain!
