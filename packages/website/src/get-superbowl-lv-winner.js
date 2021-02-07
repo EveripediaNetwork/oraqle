@@ -13,7 +13,7 @@ const infuraAPIKeys = {
 };
 
 // The Contract interface
-const abi = require("oraqle-contracts/artifacts/contracts/associated-press/SuperBowlLV.sol/SuperBowlLV.json").abi;
+const abi = require("./oraqle-contracts/artifacts/contracts/associated-press/SuperBowlLV.sol/SuperBowlLV.json").abi;
 
 const getSuperbowlLVWinner = async (
     network
