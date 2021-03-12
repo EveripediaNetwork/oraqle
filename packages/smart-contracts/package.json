@@ -8,10 +8,13 @@
     "chai": "^4.2.0",
     "ethereum-waffle": "^3.2.1",
     "ethers": "^5.0.24",
-    "hardhat": "^2.0.6"
+    "hardhat": "^2.0.6",
+    "hardhat-gas-reporter": "^1.0.4"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^3.3.0"
+    "@openzeppelin/contracts": "^3.3.0",
+    "@pinata/sdk": "^1.1.13",
+    "json-diff": "^0.5.4"
   },
   "scripts": {
     "test": "npx hardhat test",
