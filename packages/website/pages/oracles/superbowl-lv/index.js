@@ -68,20 +68,12 @@ export function SuperBowlLVWinner({ network, winningTeam }) {
                             </p>
                         </a>
                     </Link>
-                    {/*<a*/}
-                    {/*    href="https://docs.everipedia.org/current-oraqles-projects/jan-5-2021"*/}
-                    {/*    className={styles.card}*/}
-                    {/*    target="_blank"*/}
-                    {/*>*/}
-                    {/*    <h3>Docs &rarr;</h3>*/}
-                    {/*    <p>Discover how to use this data in software applications.</p>*/}
-                    {/*</a>*/}
                 </div>
             </main>
 
             <footer className={styles.footer}>
-                <a href="https://everipedia.org">
-                    Powered by the Associated Press and Everipedia
+                <a href="https://braindao.org">
+                    Powered by the Associated Press and BrainDAO
                 </a>
             </footer>
         </div>

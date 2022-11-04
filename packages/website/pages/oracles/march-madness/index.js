@@ -172,8 +172,8 @@ export function MarchMadnessViewer({data, year, defaultView}) {
 const press_json = [
     {
         image: "https://socialsharepreview.com/api/image-proxy?url=https%3A%2F%2Fcdn.buttercms.com%2FHLrxn5xQKa4ItpvAbC9K",
-        title: "EVERIPEDIA.ORG",
-        text: "The Associated Press works with Everipedia to publish March Madness scores on Ethereum | Everipedia Blog",
+        title: "BRAINDAO.ORG",
+        text: "The Associated Press works with BrainDAO to publish March Madness scores on Ethereum | BrainDAO Blog",
         link: "https://everipedia.org/blog/the-associated-press-works-with-everipedia-to-publish-march-madness-scores-on-ethereum"
     },
     {

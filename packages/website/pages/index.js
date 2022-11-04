@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>Everipedia OraQles</h1>
+        <h1 className={styles.title}>BrainDAO OraQles</h1>
 
         {/* <p className={styles.description}>
           Get started by editing{' '}
@@ -18,7 +18,7 @@ export default function Home() {
             <a href="" className={`${styles.activeoracle} ${styles.card}`}>
               <h3>March Madness 2021 &rarr;</h3>
               <p>
-                Associated Press and Everipedia partner to bring
+                Associated Press and BrainDAO partner to bring
                 March Madness 2021 Results on-chain!
               </p>
             </a>
@@ -27,7 +27,7 @@ export default function Home() {
             <a href="" className={styles.card}>
               <h3>February 7th, 2021 Super Bowl LV &rarr;</h3>
               <p>
-                Associated Press and Everipedia partner again to bring the
+                Associated Press and BrainDAO partner again to bring the
                 Super Bowl LV Results on-chain!
               </p>
               {/* <p>Find in-depth information about Next.js features and API.</p> */}
@@ -38,7 +38,7 @@ export default function Home() {
             <a href="" className={styles.card}>
               <h3>January 5th, 2021 Senate Runoff &rarr;</h3>
               <p>
-                Associated Press and Everipedia partner again to bring the
+                Associated Press and BrainDAO partner again to bring the
                 Georgia senate runoff on-chain!
               </p>
               {/* <p>Find in-depth information about Next.js features and API.</p> */}
@@ -51,7 +51,7 @@ export default function Home() {
           >
             <h3>November 3rd, 2021 Election &rarr;</h3>
             <p>
-              Associated Press and Everipedia brought the U.S. election
+              Associated Press and BrainDAO brought the U.S. election
               on-chain!
             </p>
           </a>
@@ -77,7 +77,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a href="https://everipedia.org">Powered by Everipedia</a>
+        <a href="https://braindao.org">Powered by BrainDAO</a>
       </footer>
     </div>
   );

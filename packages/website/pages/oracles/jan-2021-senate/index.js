@@ -101,8 +101,8 @@ export function Senate({ network, winners }) {
       </main>
 
       <footer className={styles.footer}>
-        <a href="https://everipedia.org">
-          Powered by the Associated Press and Everipedia
+        <a href="https://braindao.org">
+          Powered by the Associated Press and BrainDAO
         </a>
       </footer>
     </div>
