@@ -20,7 +20,7 @@ export const event = ({action, category, label, value}) => {
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-const title = "BrainDAO OraQles";
+const title = "IQ OraQles";
 const description = "BrainDAO brings real-world information onto the blockchain with our innovative OraQle product. Try it on Ethereum today.";
 
 function MyApp({Component, pageProps}) {
