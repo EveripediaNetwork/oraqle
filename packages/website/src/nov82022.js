@@ -133,6 +133,7 @@ export const getAllSenators = async(network) => {
     return await Promise.all(senateStates.map(s => getWinnerSenators(network, s)))
   } catch (error) {
     console.error(error)
+    return []
   }
 }
 
@@ -141,6 +142,7 @@ export const getAllGovernors = async(network) => {
     return await Promise.all(states.map(s => getWinnerGovernor(network, s)))
   } catch (error) {
     console.error(error)
+    return []
   }
 }
 
