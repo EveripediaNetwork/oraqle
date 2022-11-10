@@ -15,6 +15,39 @@ const alchemyApiKeys = {
 };
 
 
+const senateStates = [
+  "Alabama",
+  "Alaska",
+  "Arkansas",
+  "Florida",
+  "Idaho",
+  "Indiana",
+  "Iowa",
+  "Kansas",
+  "Kentucky",
+  "Louisiana",
+  "Missouri",
+  "North Carolina",
+  "North Dakota",
+  "Ohio",
+  "Oklahoma",
+  "South Carolina",
+  "South Dakota",
+  "Utah",
+  "Wisconsin",
+  "California",
+  "Colorado",
+  "Connecticut",
+  "Hawaii",
+  "Illinois",
+  "Maryland",
+  "New Hampshire",
+  "New York",
+  "Oregon",
+  "Vermont",
+  "Washington"
+]
+
 const states = ["Alaska", 
                 "Alabama", 
                 "Arkansas", 
@@ -96,7 +129,7 @@ export const getWinnerGovernor = async (
 };
 
 export const getAllSenators = async(network) => {
-  return Promise.all(states.map(s => getWinnerSenators(network, s)))
+  return Promise.all(senateStates.map(s => getWinnerSenators(network, s)))
 }
 
 export const getAllGovernors = async(network) => {
