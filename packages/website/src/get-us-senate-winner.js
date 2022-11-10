@@ -20,8 +20,8 @@ const getUSSenateWinner = async (
   network,
   position /* "U.S. Senate Class II" */
 ) => {
-  // const provider = ethers.getDefaultProvider(network);
-  const provider = new ethers.providers.JsonRpcProvider(infuraAPIKeys[network]);
+  const provider = ethers.getDefaultProvider(network);
+  // const provider = new ethers.providers.JsonRpcProvider(infuraAPIKeys[network]);
   const contractAddress = addresses[network];
   let contract = new ethers.Contract(contractAddress, abi, provider);
   const winnerLastName = await contract.winners(position);
