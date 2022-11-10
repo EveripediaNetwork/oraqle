@@ -129,11 +129,19 @@ export const getWinnerGovernor = async (
 };
 
 export const getAllSenators = async(network) => {
-  return await Promise.all(senateStates.map(s => getWinnerSenators(network, s)))
+  try {
+    return await Promise.all(senateStates.map(s => getWinnerSenators(network, s)))
+  } catch (error) {
+    console.error(error)
+  }
 }
 
 export const getAllGovernors = async(network) => {
-  return await Promise.all(states.map(s => getWinnerGovernor(network, s)))
+  try {
+    return await Promise.all(states.map(s => getWinnerGovernor(network, s)))
+  } catch (error) {
+    console.error(error)
+  }
 }
 
 
