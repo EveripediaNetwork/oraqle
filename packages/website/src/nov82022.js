@@ -83,7 +83,7 @@ export const getWinnerSenators = async(network, state) => {
   const winnerSenators = await contract.getWinnerSenatorsByState(state)
   if(winnerSenators)
     return {state, senators: winnerSenators[1]}
-  return undefined
+  return []
 }
 
 export const getWinnerGovernor = async (
