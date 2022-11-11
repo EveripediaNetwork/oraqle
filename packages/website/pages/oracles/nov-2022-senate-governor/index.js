@@ -57,7 +57,7 @@ export function SenateGovernors({ network, winnerSenators, winnerGovernors }) {
         </a>
         <a
           style={{ textDecoration: "underline" }}
-          href={`/oracles/nov-2022-senate-governor?network=${network === "matic" ? "goerli" : "matic"}`}
+          href={`/oracles/nov-2022-senate-governor?network=${network === "matic" ? "bsc" : "matic"}`}
         >
           <p className={styles.description}>
             Swicth to {network === "matic" ? "BSC" : "Matic"}

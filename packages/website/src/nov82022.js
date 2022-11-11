@@ -5,12 +5,12 @@ import nov2022Abi from "../abis/nov2022elections.abi";
 const ethers = require("ethers");
 
 export const addresses = {
-  goerli: "0xb6e5881D63Be76c6181796D45890150f00664288",
+  bsc: "0x7D19bFf4A05b13C8Cf4e0D7501525Af26F3b2622",
   matic: "0x7832dBa70DCf40Bc68aDbe10ED4c1C743e910eda",
 };
 
-const alchemyApiKeys = {
-  goerli: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY_BSC,
+const access = {
+  bsc: process.env.NEXT_PUBLIC_BSC_RPC,
   matic: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY_MATIC,
 };
 
@@ -105,7 +105,7 @@ const states = ["Alaska",
                 "Wyoming"]
 
 const getProviderAndContract = (network) => {
-  const provider = new ethers.providers.AlchemyProvider(network, alchemyApiKeys[network]);
+  const provider = network === "matic" ? new ethers.providers.AlchemyProvider(network, access[network]) : new ethers.providers.JsonRpcProvider(access[network]);
   const contractAddress = addresses[network];
   return new ethers.Contract(contractAddress, nov2022Abi, provider);
 
