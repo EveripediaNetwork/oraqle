@@ -12,10 +12,10 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p> */}
 
-        <div className={styles.grid}>
+        <div className={styles.grid} style={{gridColumnGap: 0}}>
 
           <Link href="/oracles/march-madness">
-            <a href="" className={`${styles.activeoracle} ${styles.card}`}>
+            <a href="" className={styles.card}>
               <h3>March Madness 2021 &rarr;</h3>
               <p>
                 Associated Press and BrainDAO partner to bring
@@ -52,6 +52,17 @@ export default function Home() {
             <h3>November 3rd, 2021 Election &rarr;</h3>
             <p>
               Associated Press and BrainDAO brought the U.S. election
+              on-chain!
+            </p>
+          </a>
+
+          <a
+            href="/oracles/nov-2022-senate-governor?network=matic"
+            className={styles.card}
+          >
+            <h3>November 8th, 2022 Election &rarr;</h3>
+            <p>
+              Associated Press and BrainDAO brought the U.S. Senate & Governor elections
               on-chain!
             </p>
           </a>

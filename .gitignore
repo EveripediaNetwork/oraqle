@@ -6,3 +6,4 @@ hardhat.config.js
 
 # Next/Vercel
 .next
+.env
