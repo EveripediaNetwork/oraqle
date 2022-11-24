@@ -45,7 +45,7 @@ const getMarchMadnessData = async (
         ipfsHash: ipfsHash,
         contractAddress: addresses[`${network}_${year}`],
         infuraUrl: network === "mainnet" ?
-            "https://mainnet.infura.io/v3/<INFURA_API_KEY>" :
+        infuraAPIKeys[network] :
             network.startsWith("rinkeby") ? "https://rinkeby.infura.io/v3/<INFURA_API_KEY>" :
                 network === "bsc" ? "https://bsc-dataseed.binance.org" :
                     network === "matic" ? "https://rpc-mainnet.maticvigil.com" :

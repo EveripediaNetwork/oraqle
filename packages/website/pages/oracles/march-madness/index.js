@@ -311,7 +311,6 @@ function GetNetworkString(network) {
 }
 
 function Info({contractAddress, infuraUrl, ipfsHash, network}) {
-    console.log(network)
     return <div>
         <h3>How to access the on-chain data</h3>
         This will get you started with retrieving the latest data from the smart contract on
@@ -508,25 +507,32 @@ export const ReactBrackets = ({data}) => {
     ];
 
 
-    const CustomSeed = (seed, breakpoint, roundIndex) => {
+    const CustomSeed = (_seed, breakpoint, roundIndex) => {
         // breakpoint passed to Bracket component
         // to check if mobile view is triggered or not
 
         // mobileBreakpoint is required to be passed down to a seed
+        const { seed } = _seed
         return (
             <Seed mobileBreakpoint={breakpoint} style={{fontSize: 14}}>
                 <SeedItem>
                     <div>
-                        <SeedTeamWrapper
-                            winner={seed.winner}
-                            team={seed.teams[0]}
-                            team_points={seed.game.home_points}
-                            tooltip_position={'top'}/>
-                        <SeedTeamWrapper
-                            winner={seed.winner}
-                            team={seed.teams[1]}
-                            team_points={seed.game.away_points}
-                            tooltip_position={'bottom'}/>
+                        {
+                            seed ? (
+                                <>                                
+                                <SeedTeamWrapper
+                                    winner={seed.winner}
+                                    team={seed.teams[0]}
+                                    team_points={seed.game.home_points}
+                                    tooltip_position={'top'}/>
+                                <SeedTeamWrapper
+                                    winner={seed.winner}
+                                    team={seed.teams[1]}
+                                    team_points={seed.game.away_points}
+                                    tooltip_position={'bottom'}/>
+                                </>
+                            ): null
+                        }
                     </div>
                 </SeedItem>
                 <div className="sc-gKsewC ha-DNGW">{seed.date}</div>
